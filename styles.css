@@ -4,6 +4,8 @@
   --primary-clr-500: #151418;
 
   --sub-clr-300: #8C28C2;
+
+  --primary-size-300: 2rem;
 }
 
 /* Box sizing rules */
@@ -126,8 +128,8 @@ select {
 
 .landing-buttons a{
   text-decoration: none;
-  height: 2rem;
-  width: 2rem;
+  height: var(--primary-size-300);
+  width: var(--primary-size-300);
   border: 3.9px solid var(--primary-clr-300);
   background-color: transparent;
   border-radius: 50%;
@@ -163,8 +165,8 @@ select {
 }
 
 .skills-button:hover{
-  height: 2rem;
-  width: 2rem;
+  height: var(--primary-size-300);
+  width: var(--primary-size-300);
   border: 4.3px solid #232f1f;
 }
 
@@ -190,8 +192,8 @@ select {
 }
 
 .about-me-button:hover{
-  height: 2rem;
-  width: 2rem;
+  height: var(--primary-size-300);
+  width: var(--primary-size-300);
   border: 4.3px solid #232f1f;
 }
 
@@ -265,11 +267,21 @@ select {
   margin-left: 3em;
   border-radius: 25px;
   color: var(--primary-clr-300);
+  display: grid;
+  align-items: center;
+}
+
+.styled-divider{
+  border: none; /* Remove the default border */
+  height: 2px;  /* Set the height of the line */
+  background-color: var(--primary-clr-400); /* Set the color of the line */
+  width: 50%;
 }
 
 .about-grid2 p {
-  font-size: 1.2rem;
-  padding: 1em;
+  font-size: 0.9rem;
+  padding: 2em;
+  text-align: center;
 }
 
 .about-grid3{
@@ -294,6 +306,7 @@ select {
 .span-me {
   color: var(--primary-clr-500);
 }
+
 
 
 
