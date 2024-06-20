@@ -307,6 +307,35 @@ select {
   color: var(--primary-clr-500);
 }
 
+/*this is not real*/
+.arigato{
+  color: blue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.sa-imo{
+  background-color: var(--primary-clr-500);
+  height: 92%;
+  width: 90%;
+  margin-left: 3em;
+  border-radius: 25px;
+  color: var(--primary-clr-300);
+  display: grid;
+  align-items: center;
+}
+
+.thanks{
+  padding-top: 5%;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40vh 10vh 40vh;
+  gap: 5px;
+}
+
 
 
 
