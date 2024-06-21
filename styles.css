@@ -243,7 +243,6 @@ select {
 }
 
 .about-me-section > div{
-  background-color: var(--primary-clr-500);
 }
 
 .about-me-section > div:nth-child(odd){
@@ -303,37 +302,20 @@ select {
   font-size: 1.8rem;
 }
 
-.span-me {
-  color: var(--primary-clr-500);
+.purple-text {
+  color: var(--sub-clr-300);
 }
 
-/*this is not real*/
-.arigato{
-  color: blue;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center
+/*Personal Information*/
+.personal-info-title{
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-.sa-imo{
-  background-color: var(--primary-clr-500);
-  height: 92%;
-  width: 90%;
-  margin-left: 3em;
-  border-radius: 25px;
-  color: var(--primary-clr-300);
+.personal-info-text{
   display: grid;
-  align-items: center;
-}
-
-.thanks{
-  padding-top: 5%;
-  height: 110vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40vh 10vh 40vh;
-  gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-weight: 500;
 }
 
 
