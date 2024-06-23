@@ -318,6 +318,12 @@ select {
   font-weight: 500;
 }
 
+/*More Information*/
+.more-info-text{
+  display: grid;
+  grid-template-rows: 10px 1fr 1fr;
+}
+
 
 
 
