@@ -148,6 +148,10 @@ select {
   font-size: 0.9rem;
   letter-spacing: 1px;
   border-radius: 8px;
+  opacity: 0; /* Start with opacity 0 */
+  visibility: hidden; /* Hide the element */
+  transform: scale(0.1); /* Start with smaller size */
+  transition: opacity 0.5s, transform 0.3s; /* Smooth transition for opacity and transform */
 }
 
 .skills-button{
@@ -159,16 +163,6 @@ select {
 .skills-text{
   left: 64%;
   top: 52%;
-  opacity: 0; /* Start with opacity 0 */
-  visibility: hidden; /* Hide the element */
-  transform: scale(0.1); /* Start with smaller size */
-  transition: opacity 0.5s, transform 0.3s; /* Smooth transition for opacity and transform */
-}
-
-.skills-button:hover{
-  height: var(--primary-size-300);
-  width: var(--primary-size-300);
-  border: 4.3px solid #232f1f;
 }
 
 .skills-button:hover + .skills-text{
@@ -186,13 +180,9 @@ select {
 .about-me-text{
   left: 58.8%;
   top: 80%;
-  opacity: 0; /* Start with opacity 0 */
-  visibility: hidden; /* Hide the element */
-  transform: scale(0.1); /* Start with smaller size */
-  transition: opacity 0.5s, transform 0.3s; /* Smooth transition for opacity and transform */
 }
 
-.about-me-button:hover{
+.landing-hover-btn:hover{
   height: var(--primary-size-300);
   width: var(--primary-size-300);
   border: 4.3px solid #232f1f;
@@ -330,7 +320,7 @@ select {
   padding: 0.7em 0.7em;
   width: 45%;
   text-align: end;
-  justify-self: end; /* Align to the right */
+  justify-self: center; /* Align to the right */
   font-weight: 800;
 }
 
@@ -341,11 +331,10 @@ select {
 
 .grid-info:nth-of-type(1) {
   grid-row: 2; /* Place the first div in the third row */
-  align-self: end; /* Align to the bottom */
+  align-self: start; /* Align to the bottom */
 }
 
 .grid-info:nth-of-type(2) {
   grid-row: 3; /* Place the second div in the fourth row */
-  align-self: end; /* Align to the bottom */
-  margin-top: -1em; /* Adjust to overlap slightly */
+  align-self: start; /* Align to the bottom */
 }
